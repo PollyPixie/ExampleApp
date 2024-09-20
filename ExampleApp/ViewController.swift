@@ -12,15 +12,18 @@ class ViewController: UIViewController {
 	private let helper = Helper()
 	private let textLabel = UILabel()
 	private let imageView = UIImageView()
-
+    private let imageContainerView = UIView()
+    
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		updateNumbers()
 		
 		setupLabel()
-		setupImageView()
-		view.addSubview(textLabel)
-		view.addSubview(imageView)
+        setupImageContainerView()
+        setupImageView()
+        view.addSubview(textLabel)
+        view.addSubview(imageContainerView)
+		imageContainerView.addSubview(imageView)
 		setupView()
 	}
 	
@@ -37,14 +40,20 @@ class ViewController: UIViewController {
 	}
 	
 	private func setupImageView() {
-		imageView.image = UIImage(named: "raccoon")
-		imageView.frame = CGRect(x: 30, y: 130, width: 100, height: 200)
-		imageView.layer.shadowColor = UIColor.black.cgColor
-		imageView.layer.shadowOffset = CGSize(width: 15, height: 15)
-		imageView.layer.shadowOpacity = 1
-		imageView.layer.shadowRadius = 10
+        imageView.frame = imageContainerView.bounds
+        imageView.image = UIImage(named: "raccoon")
+        imageView.layer.cornerRadius = 20
+        imageView.clipsToBounds = true
 	}
-	
+    
+    private func setupImageContainerView(){
+        imageContainerView.frame = CGRect(x: 30, y: 130, width: 100, height: 200)
+        imageContainerView.layer.shadowColor = UIColor.black.cgColor
+        imageContainerView.layer.shadowOffset = CGSize(width: 15, height: 15)
+        imageContainerView.layer.shadowOpacity = 1
+        imageContainerView.layer.shadowRadius = 10
+    }
+    
 	private func setupView() {
 		let gradient = CAGradientLayer()
 		gradient.frame = view.bounds

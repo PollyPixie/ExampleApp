@@ -14,6 +14,7 @@
 		069D08BB2C8E75B10077DF0B /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 069D08BA2C8E75B10077DF0B /* Base */; };
 		069D08C32C8E829F0077DF0B /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069D08C22C8E829F0077DF0B /* Helper.swift */; };
 		73357FD22CA71CD600D0C337 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73357FD12CA71CD600D0C337 /* ShadowView.swift */; };
+		739E01832CB187B5008C8BB6 /* UIView+Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739E01822CB187B5008C8BB6 /* UIView+Gradient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		069D08BC2C8E75B10077DF0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		069D08C22C8E829F0077DF0B /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		73357FD12CA71CD600D0C337 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		739E01822CB187B5008C8BB6 /* UIView+Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Gradient.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,14 +62,55 @@
 			children = (
 				069D08AE2C8E75AF0077DF0B /* AppDelegate.swift */,
 				069D08B02C8E75AF0077DF0B /* SceneDelegate.swift */,
-				069D08B22C8E75AF0077DF0B /* ViewController.swift */,
-				73357FD12CA71CD600D0C337 /* ShadowView.swift */,
-				069D08C22C8E829F0077DF0B /* Helper.swift */,
-				069D08B72C8E75B10077DF0B /* Assets.xcassets */,
-				069D08B92C8E75B10077DF0B /* LaunchScreen.storyboard */,
+				739E01842CB18B22008C8BB6 /* ViewControllers */,
+				739E01852CB18B5D008C8BB6 /* CustomElements */,
+				739E01872CB18BC6008C8BB6 /* Services */,
+				739E01882CB18C00008C8BB6 /* Resources */,
+				739E01862CB18B97008C8BB6 /* Extensions */,
 				069D08BC2C8E75B10077DF0B /* Info.plist */,
 			);
 			path = ExampleApp;
+			sourceTree = "<group>";
+		};
+		739E01842CB18B22008C8BB6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				069D08B22C8E75AF0077DF0B /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		739E01852CB18B5D008C8BB6 /* CustomElements */ = {
+			isa = PBXGroup;
+			children = (
+				73357FD12CA71CD600D0C337 /* ShadowView.swift */,
+			);
+			path = CustomElements;
+			sourceTree = "<group>";
+		};
+		739E01862CB18B97008C8BB6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				739E01822CB187B5008C8BB6 /* UIView+Gradient.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		739E01872CB18BC6008C8BB6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				069D08C22C8E829F0077DF0B /* Helper.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		739E01882CB18C00008C8BB6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				069D08B72C8E75B10077DF0B /* Assets.xcassets */,
+				069D08B92C8E75B10077DF0B /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +187,7 @@
 				069D08AF2C8E75AF0077DF0B /* AppDelegate.swift in Sources */,
 				069D08B12C8E75AF0077DF0B /* SceneDelegate.swift in Sources */,
 				069D08C32C8E829F0077DF0B /* Helper.swift in Sources */,
+				739E01832CB187B5008C8BB6 /* UIView+Gradient.swift in Sources */,
 				73357FD22CA71CD600D0C337 /* ShadowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

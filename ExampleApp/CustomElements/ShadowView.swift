@@ -28,6 +28,10 @@ class ShadowView: UIView {
         layer.shadowPath = shadowPath.cgPath
     }
     
+    func updateImage(_ imageName: String) {
+        imageView.image = UIImage(named: imageName)
+    }
+    
     private func setupImageView(imageName: String) {
         imageView.image = UIImage(named: imageName)
         imageView.layer.cornerRadius = 20

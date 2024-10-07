@@ -15,6 +15,7 @@
 		069D08C32C8E829F0077DF0B /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069D08C22C8E829F0077DF0B /* Helper.swift */; };
 		73357FD22CA71CD600D0C337 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73357FD12CA71CD600D0C337 /* ShadowView.swift */; };
 		739E01832CB187B5008C8BB6 /* UIView+Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739E01822CB187B5008C8BB6 /* UIView+Gradient.swift */; };
+		739E01942CB42D20008C8BB6 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739E01932CB42D20008C8BB6 /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		069D08C22C8E829F0077DF0B /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		73357FD12CA71CD600D0C337 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		739E01822CB187B5008C8BB6 /* UIView+Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Gradient.swift"; sourceTree = "<group>"; };
+		739E01932CB42D20008C8BB6 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				73357FD12CA71CD600D0C337 /* ShadowView.swift */,
+				739E01932CB42D20008C8BB6 /* CustomButton.swift */,
 			);
 			path = CustomElements;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				069D08AF2C8E75AF0077DF0B /* AppDelegate.swift in Sources */,
 				069D08B12C8E75AF0077DF0B /* SceneDelegate.swift in Sources */,
 				069D08C32C8E829F0077DF0B /* Helper.swift in Sources */,
+				739E01942CB42D20008C8BB6 /* CustomButton.swift in Sources */,
 				739E01832CB187B5008C8BB6 /* UIView+Gradient.swift in Sources */,
 				73357FD22CA71CD600D0C337 /* ShadowView.swift in Sources */,
 			);

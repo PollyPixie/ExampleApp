@@ -15,14 +15,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 	func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
 		
 		guard let windowScene = (scene as? UIWindowScene) else { return }
-			// Создаём окно для сцены
-		let window = UIWindow(windowScene: windowScene)
-			// Устанавливаем корневой контроллер в окне
-		window.rootViewController = ViewController()
-			// Отображаем окно на экране
-		window.makeKeyAndVisible()
-			// Сохраняем ссылку на окно, чтобы оно не было выгружено
-		self.window = window
+		window = UIWindow(windowScene: windowScene)
+			
+        let helper = Helper() //создаем экземпляр класса хелпер
+        let viewController = ViewController() //создаем вьюконтролер
+        viewController.helper = helper //инициалтзируем свойство во вьюконтролере
+        
+		window?.rootViewController = viewController
+		window?.makeKeyAndVisible()
 	}
 
 	func sceneDidDisconnect(_ scene: UIScene) {
